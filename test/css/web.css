@@ -1,0 +1,217 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	
+	margin-top: 0px;
+}
+
+#wrapper {
+	height: 2000px;
+	width: 1200px;
+	background-color: #580000;
+	margin-right: auto;
+	margin-left: auto;
+	border-top-width: 5px;
+	border-top-style: solid;
+	background: #5a0000; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#5a0000, black); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#5a0000, black); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#5a0000, black); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#5a0000, black); /* Standard syntax */
+}
+
+
+#header {
+	float: left;
+	height: 600px;
+	width: 1200px;
+	background-color: rgba(0,0,0,0.5);
+	
+}
+
+#TopNavigation {
+	float: left;
+	height: 70px;
+	width: 780px;
+	margin-top: 50px;
+}
+.topboton {
+	font-family: Georgia;
+	font-size: 13px;
+	color: #FFF;
+	float: left;
+	height: auto;
+	width: auto;
+	margin-left: 20px;
+	line-height: 35px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+
+.topboton a {
+	color: #FFF;
+	text-decoration:none;	
+}
+.headertext-title {
+	font-family: Georgia;
+	font-size: 46px;
+	color: #FFF;
+	float: left;
+	height: 115px;
+	width: 300px;
+	
+}
+.headertext-txt {
+	float: left;
+	height: 150px;
+	width: 330px;
+	margin-top: 0px;
+	color: #FFF;
+	font-size: 12px;
+	line-height: 19px;
+	font-family: Georgia;
+}
+#read {
+	font-family: Georgia;
+	font-size: 13px;
+	line-height: 35px;
+	height: auto;
+	width: 130px;
+	padding-left: 10px;
+}
+
+#read:hover {
+	background-color: #76c38f;
+	height: 35px;
+	width: 140;
+	border-radius:7px;
+	
+}
+
+.roundpic {
+	background-color: #0FF;
+	float: left;
+	height: 380px;
+	width: 380px;
+	border-radius: 50%;
+	background-image: url(../images/ImageHolder.jpg);
+	border: 30px solid #6b6b6b;
+}
+
+.headertext {
+	float: left;
+	height: auto;
+	width: 380px;
+	margin-left: 30px;
+	margin-top: 30px;
+}
+
+
+
+
+.topboton:hover {
+	background-color: #76c38f;
+	height: 35px;
+	width: auto;
+	border-radius:7px;
+}
+#logo {
+	float: left;
+	height: 100px;
+	width: 420px;
+}
+.service {
+	float: left;
+	height: 350px;
+	width: 225px;
+	background-color: #FFF;
+	margin-top: 50px;
+	margin-left: 60px;
+	cursor:pointer;
+}
+
+.service:hover {
+	background-color: #76c38f;
+}
+
+#content {
+}
+.Rectangle {
+	float: left;
+	height: auto;
+	width: auto;
+	margin-top: 20px;
+	margin-left: 35px;
+}
+
+.Rectangle:hover{
+	
+}
+
+
+#last {
+	float: left;
+	margin-top: 50px;
+	margin-left: 100px;
+	margin-bottom: 50px;
+}
+.lastwork {
+	background-color: #666;
+	float: left;
+	height: 190px;
+	width: 290px;
+	border: 5px solid #FFF;
+	margin-left: 80px;
+	background-image: url(../images/a.jpg);
+	margin-bottom: 50px;
+	cursor:pointer;
+}
+#headleft {
+	height: 30px;
+	width: 30px;
+	margin-top: 200px;
+	margin-left: 150px;
+	float: left;
+	cursor:pointer;
+}
+
+#headright {
+	height: 30px;
+	width: 30px;
+	margin-top: 200px;
+	margin-left: 50px;
+	float: left;
+	cursor:pointer;
+}
+
+
+.lastwork:hover{
+	background-image: url(../images/b.jpg);
+	border: 5px solid #76c38f;
+}
+
+
+.SERVICE-TITLE {
+	font-family: Georgia;
+	font-size: 32px;
+	line-height: 32px;
+	margin-top: 10px;
+	margin-left: 0px;
+	text-align: center;
+	float: left;
+	color: #333333;
+}
+.service-text {
+	font-family: Georgia;
+	font-size: 12px;
+	float: left;
+	width: 160px;
+	margin-left: 30px;
+	text-align: center;
+	margin-top: 40px;
+	color: #979797;
+}
+a:hover{
+	color: #FFF;	
+}
