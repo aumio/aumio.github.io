@@ -1,0 +1,156 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	
+	margin-top: 0px;
+	font-family: '微軟正黑體' !important;
+	
+}
+
+#wrapper {
+	height: 3000px;
+	width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #fff;
+	
+	
+}
+
+
+#header {
+	float: left;
+	margin-top: 50px;
+	height: 350px;
+	width: 900px;
+}
+
+#personal_data {
+	float: left;
+	height: 250px;
+	width: 170px;
+}
+.separate {
+	float: left;
+	height: 250px;
+	width: 5px;
+	margin-right: 60px;
+	margin-left: 60px;
+	background-color: #4f5d73;
+}
+#name{
+	font-size:30px;
+
+}
+#position{
+	font-size:15px;
+}
+#aboutme{
+	float: left;
+	margin-top: 130px;
+	height: 80px;
+	width: 600px;
+	font-size:30px;
+}
+#about_txt{
+	float: left;
+	margin-top: 10px;
+	height: 80px;
+	width: 600px;
+	font-size:18px;
+	letter-spacing:1px;
+}
+#content{
+	float: left;
+	height: 500px;
+	width: 900px;
+
+}
+#content_left{
+	float: left;
+	height: 600px;
+	width: 450px;
+
+}
+#content_right{
+	float: left;
+	height: 600px;
+	width: 450px;
+
+}
+.title{
+	font-size: 20px;
+	float: left;
+	line-height: 20px;
+	width: 435px;
+	margin-bottom: 10px;
+}
+.title-bar {
+	float: left;
+	height: 20px;
+	width: 5px;
+	margin-right: 10px;
+	background-color: #4f5d73;
+	margin-bottom: 10px;
+}
+.chart-wrapper {
+	float: left;
+	width:400px;
+	height: 400px;
+	margin-left: -25px;
+	
+}
+#experience{
+	float: left;
+	height: 200px;
+	width: 450px;
+
+}
+#contact{
+	float: left;
+	height: 200px;
+	width: 450px;
+
+}
+.contact_tool{
+	float: left;
+	margin-left: 15px;
+	width: 400px;
+	font-size: 20px;
+	letter-spacing:1px;
+
+}
+#timeline {
+	list-style: none;
+	font-size: 20px;
+	letter-spacing:1px;
+}
+#timeline li {
+	text-indent: -.6em;
+	margin-bottom: 5px;
+}
+.timeline-dot {
+	color:#4f5d73;
+	padding-right: 10px;
+	zoom:1;
+}
+#Portfolio{
+	float: left;
+	width: 900px;
+	height: auto;
+}
+.Portfolio_pic{
+	float: left;
+	margin-top: 15px;
+	width: 290px;
+	height: 200px;
+	background-color: #000;
+}
+.Portfolio_space{
+	float: left;
+	width: 15px;
+	height: 200px;
+
+}
+
+

@@ -3,6 +3,7 @@
 body{
 	
 	margin-top: 0px;
+	font-family: 微軟正黑體;
 }
 
 #wrapper {
@@ -217,4 +218,8 @@ a:hover{
 }
 .thumbnail {
 	margin: 10px;
+}
+#name{
+	font-size:15px;
+
 }
