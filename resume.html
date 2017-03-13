@@ -41,12 +41,12 @@
 		<div id="content_right">
 				<div id="experience">
 					<div class="title-bar"></div>
-					<div class="title">學歷&工作經歷</div>
+					<div class="title">學經歷</div>
 					<br><br>
 					<ul id="timeline">
-						<li><i class="fa fa-circle-o  timeline-dot"></i>麥斯科技工作</li>
-						<li><i class="fa fa-circle-o  timeline-dot"></i>輔仁大學畢業</li>
-						<li><i class="fa fa-circle-o  timeline-dot"></i>新店高中畢業</li>
+						<li><i class="fa fa-briefcase  timeline-dot"></i> 麥斯科技工作　<span style="font-size: 15px;color: #929292;">2015／08～now</span></li>
+						<li><i class="fa fa-graduation-cap  timeline-dot"></i>輔仁大學畢業　<span style="font-size: 15px;color: #929292;">2011／09～2015／07</span></li>
+						<li><i class="fa fa-graduation-cap  timeline-dot"></i>新店高中畢業　<span style="font-size: 15px;color: #929292;">2008／09～2011／06</span></li>
 					</ul>
 					
 				
@@ -65,16 +65,16 @@
 			
 		</div>
 		<div id="Portfolio">
-			<div class="Portfolio_pic"></div>
+			<div class="Portfolio_pic"><a href="https://aumio.github.io/images/Vietnam.jpg"><img src="images/1.jpg"></a></div>
 			<div class="Portfolio_space"></div>
-			<div class="Portfolio_pic"></div>
+			<div class="Portfolio_pic"><a href="https://aumio.github.io/images/SixSenses_info.jpg"><img src="images/2.jpg"></a></div>
 			<div class="Portfolio_space"></div>
-			<div class="Portfolio_pic"></div>
-			<div class="Portfolio_pic"></div>
+			<div class="Portfolio_pic"><a href="https://aumio.github.io/images/kyoto.jpg"><img src="images/3.jpg"></a></div>
+			<div class="Portfolio_pic"><a href="https://aumio.github.io/images/hokkaido.jpg"><img src="images/4.jpg"></a></div>
 			<div class="Portfolio_space"></div>
-			<div class="Portfolio_pic"></div>
+			<div class="Portfolio_pic"><img src="images/5.jpg"></div>
 			<div class="Portfolio_space"></div>
-			<div class="Portfolio_pic"></div>
+			<div class="Portfolio_pic"><a href="https://aumio.github.io/images/Karuizawa.jpg"><img src="images/6.jpg"></a></div>
 			<div class="Portfolio_pic"></div>
 			<div class="Portfolio_space"></div>
 			<div class="Portfolio_pic"></div>
@@ -91,34 +91,8 @@
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 	<script src='js/circle-progress.min.js'></script>
+	<script src='js/script.js'></script>
 
-	<script>
-		var data = {
-		    labels: [
-		        "Photoshop",
-		        "Illustrator",
-		        "Dreamweaver"
-		    ],
-		    datasets: [
-		        {
-		            data: [70, 10, 20],
-		            backgroundColor: [
-		                "#7cbcfe",
-		                "#ffa01c",
-		                "#89ea04"
-		            ],
-		            hoverBackgroundColor: [
-		                "#7cbcfe",
-		                "#ffa01c",
-		                "#89ea04"
-		            ]
-		        }]
-		};
-		var ctx = document.getElementById("myChart");
-		var myDoughnutChart = new Chart(ctx, {
-			type: 'doughnut',
-			data: data,
-		});
-	</script>
+	
 </body>
 </html>

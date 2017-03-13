@@ -4,14 +4,16 @@ body{
 	
 	margin-top: 0px;
 	font-family: '微軟正黑體' !important;
+	background-color: #e1effc !important;
 	
 }
 
 #wrapper {
-	height: 3000px;
-	width: 900px;
+	height: 1700px;
+	width: 940px;
 	margin-right: auto;
 	margin-left: auto;
+	padding-left: 20px;
 	background-color: #fff;
 	
 	
@@ -152,5 +154,6 @@ body{
 	height: 200px;
 
 }
+
 
 
