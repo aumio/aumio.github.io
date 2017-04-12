@@ -1,0 +1,72 @@
+<style>
+	.rotatible {
+		position: absolute;
+		height: 300px;
+		border-radius: 300px;
+		border-width: 10px;
+		border-style: solid;
+		border-color: #000;
+		
+	}
+	#test{
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#image1 {
+		z-index: 1;
+		left: calc(100% / 2 - 150px);
+		top: 50px;
+	}
+
+	#image2 {
+		top: 60px;
+		border-width: 0px;
+		z-index: 0;
+		width: 0;
+		left: calc(100% / 2);
+	}
+	.hexagon-in2 {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-color: #000;
+    background-image: url(http://placekitten.com/240/240);
+    visibility: visible;
+    -webkit-transform: rotate(-60deg);
+       -moz-transform: rotate(-60deg);
+        -ms-transform: rotate(-60deg);
+         -o-transform: rotate(-60deg);
+            transform: rotate(-60deg);
+    }
+</style>
+
+
+
+<div id='test'>
+	<img class="rotatible" id="image1" src="images/me.jpg">
+	<img class="rotatible" id="image2" src="images/me2.jpg">
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+<script>
+	$('#image1').animate({
+		'width' : '0px',
+		'border-width' : '0px',
+		'left' : ($('body').width() / 2) + 'px',
+		'top' : '60px'
+	}, function () {
+		$('#image2').animate({
+			'width' : '300px',
+			'border-width' : '10px',
+			'left' : ($('body').width() / 2 - 150) + 'px',
+			// 'top' : '50px'
+		});
+	});
+
+	
+</script>
