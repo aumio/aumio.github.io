@@ -6,26 +6,28 @@
 	<title>無標題文件</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-	
+
 </head>
 
-<body>	
+<body>
 
-	<div class="row becky">
+	<div class="becky">
 		<div class="container">
 			<div class="col-xs-4 col-xs-offset-4">
-				
-				<img class="rotatible" id="image1" src="images/me2.jpg">
-				<img class="rotatible hide" id="image2" src="images/me.jpg">
-				
+
+				<div class="rotatible">
+					<img src="images/me2.jpg">
+					<img src="images/me.jpg">
+				</div>
+
 			</div>
 			<div class="col-xs-12">
 				<h1>BECKY LEE</h1>
-				<h3>　WHY ARE YOU Hire Me As A Visual Designer　</h3>
+				<h3>　Web Design | Visual Design | Illustration　</h3>
 				<p class="fa fa-arrow-down" style="font-size: 2em"></p>
 			</div>
 
-		</div>			
+		</div>
 
 	</div>
 
@@ -51,24 +53,62 @@
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 
 	<script>
-		$('#image1').animate({
+		var image1 = $($('.rotatible').children('img')[0]);
+		var image2 = $($('.rotatible').children('img')[1]);
+
+		var max_height_1 = image1.css('height');
+		console.log(max_height_1);
+
+		var border_width_image = image1.css('border-width');
+
+		image2.hide();
+
+		image1.animate({
 			'width' : '0px',
 			'border-width' : '0px',
-			'height' : $('#image1').height()
+			'height' : max_height_1
 		}, function () {
-			$('#image1').hide();
-			$('#image2').removeClass('hide');
-			$('#image2').height($('#image1').height());
-			$('#image2').animate({
-				'width' : '300px',
-				'border-width' : '10px',
-				// 'top' : '50px'
+			image1.hide();
+			// image2.show();
+			image2.width(0);
+			image2.css('height', max_height_1);
+
+			image2.css('border-width', 0);
+
+			image2.animate({
+				'width' : max_height_1,
+				'border-width' : border_width_image,
+
 			});
 		});
 
 
-	</script>	
 
-	
+
+
+
+
+
+
+
+		// $('#image1').animate({
+		// 	'width' : '0px',
+		// 	'border-width' : '0px',
+		// 	'height' : $('#image1').height()
+		// }, function () {
+		// 	$('#image1').hide();
+		// 	$('#image2').removeClass('hide');
+		// 	$('#image2').height($('#image1').height());
+		// 	$('#image2').animate({
+		// 		'width' : '300px',
+		// 		'border-width' : '10px',
+		// 		// 'top' : '50px'
+		// 	});
+		// });
+
+
+	</script>
+
+
 </body>
 </html>

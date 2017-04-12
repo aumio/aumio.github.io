@@ -2,67 +2,133 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<!-- <link href="css/web.css" rel="stylesheet" type="text/css"> -->
 	<title>無標題文件</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
-	
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<style>
+		body {
+			color: white;
+			font-family: 微軟正黑體;
+		}
+		.rotatible > img {
+			width: 100%;
+			border-radius: 100%;
+			border-width: 0.5em;
+			border-style: solid;
+			border-color: #FFF;
+			max-width: 500px;
+
+		}
+		#becky {
+			background-color: #263849;
+			height: 100vh;
+			padding-top: 30px;
+		}
+		#about {
+			background-color: #41506b;
+			height: 100vh;
+			padding-top: 50px;
+		}
+		#about p {
+			font-size: 16px;
+		}
+		.line{
+			border-bottom-width: 0.05em;
+			border-bottom-style: solid;
+			border-bottom-color: #FFF;
+			padding-bottom: 20px;
+			text-align: center;
+			text-transform:uppercase;
+		}
+		#show_border {
+			border: 3px red solid;
+		}
+	</style>
 </head>
 
 <body>
-	
-	<div id="wrapper">
-		<!-- Dame -->
-		<div id="header">
-			<div id="personal_data">
-				<img src="images/personal_pic.jpg">
-				<div id="name">李思萱 <span style="font-size: 25px;">Becky</span></div>
-				<div id="position">應徵職務:網頁視覺設計師</div>
-			</div>
-			<div class="separate"></div>
-			<div id="aboutme">關於我 About ME
-				<div id="about_txt">
-					畢業於輔大資訊管理學系。目前任職於麥斯科技美術編輯，負責維護網頁及行程上架。除了把已有文案的行程做的精美、易讓人閱讀，有時也會負責網頁切板，以滿足客戶的需求。
-				</div>
 
-			</div>			
-
-		</div>
-
-		<!-- Stream -->
-		<style>
-			.divider {
-				height: 300px;
-				background-color: #4f5d73;
-				width: 5px;
-				margin: 0 auto;
-			}
-		</style>
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-8 col-xs-offset-3">
-					<div class="row">
-						<div class="col-xs-2">
-							
-								<img src="images/personal_pic.jpg" style="max-width:100%">
-								<div id="name">李思萱 <span style="font-size: 25px;">Becky</span></div>
-								<div id="position">應徵職務:網頁視覺設計師</div>
-						</div>
-						<div class="col-xs-2">
-							<div class="divider">
-							</div>
-						</div>
-						<div class="col-xs-7">
-							<h1 class="page-header">關於我 About ME</h1>	
-							<h4 class="about_txt">
-								畢業於輔大資訊管理學系。目前任職於麥斯科技美術編輯，負責維護網頁及行程上架。除了把已有文案的行程做的精美、易讓人閱讀，有時也會負責網頁切板，以滿足客戶的需求。
-							</h4>
-		
-						</div>
+	<div id="becky">
+		<div class="container" id="show_border">
+			<div class="">
+				<div class="col-xs-4 col-xs-offset-4">
+					<div class="rotatible">
+						<img src="images/me2.jpg">
+						<img src="images/me.jpg">
 					</div>
 				</div>
-			</div>
-		</div>	
 
+				<div class="col-xs-12">
+					<h1 class="text-center">BECKY LEE</h1>
+					<h3 class="text-center">　Web Design | Visual Design | Illustration　</h3>
+					<div class="text-center" style="font-size: 2em;padding-top: 30px"><i class="fa fa-arrow-down"></i></div>
+				</div>
+			</div>
+		</div>
 	</div>
+
+	<div id="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+
+					<h2 class="line">ABOUT ME</h2>
+					<p>擅長平面和網頁設計，對設計充滿熱情，不只對於產品，也對於與消費者互動的每一個日常生活的細節。曾在麥斯科技擔任美術設計，工作內容主要是協助旅行社美化產品及網頁，內容有製作Banner、Dm、美化行程、印製小冊子、FB推廣和製作活動網頁。現在的我仍然不斷吸收新知識，摸索新的工具，希望能透過設計讓生活更美好。</p>
+				</div>
+			</div>
+
+			<div class="col-xs-5">
+				<h2 class="line">What can I do</h2>
+				<p>‧ 替社群平台、網站或其他管道製作精美的視覺圖像</p>
+				<p>‧ 理解社群平台所需的數位媒體需求</p>
+				<p>‧ 與產品團隊溝通，協助產品創造獨特的視覺宣傳素材</p>
+
+			</div>
+			<div class="col-xs-5 col-xs-offset-2">
+				<h2 class="line">Contact ME</h2>
+				<p><i class="fa fa-phone icon_size" style="color: #fff;"></i>‧ 替社群平台、網站或其他管道製作精美的視覺圖像</p>
+				<p><i class="fa fa-phone icon_size" style="color: #fff;"></i>‧ 替社群平台、網站或其他管道製作精美的視覺圖像</p>
+
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+	<script>
+		var image1 = $($('.rotatible').children('img')[0]);
+		var image2 = $($('.rotatible').children('img')[1]);
+
+		var max_height_1 = image1.css('height');
+		console.log(max_height_1);
+
+		var border_width_image = image1.css('border-width');
+
+		image2.hide();
+
+		image1.animate({
+			'width' : '0px',
+			'border-width' : '0px',
+			'height' : max_height_1
+		}, function () {
+			image1.hide();
+			// image2.show();
+			image2.width(0);
+			image2.css('height', max_height_1);
+
+			image2.css('border-width', 0);
+
+			image2.animate({
+				'width' : max_height_1,
+				'border-width' : border_width_image,
+
+			});
+		});
+
+	</script>
+
+
 </body>
 </html>
