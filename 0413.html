@@ -168,10 +168,15 @@
 
 	<script>
 		$('.rotatible').each(function(){
-			var image1 = $($(this).children('img')[0]);
-			var image2 = $($(this).children('img')[1]);
+			rotateThisImage($(this));
+		});
+
+		function rotateThisImage(element) {
+			var image1 = $(element.children('img')[0]);
+			var image2 = $(element.children('img')[1]);
 
 			var max_height_1 = image1.css('height');
+
 			var border_width_image = image1.css('border-width');
 
 			image2.hide();
@@ -194,7 +199,7 @@
 
 				});
 			});
-		});
+		}
 
 		function openCity(evt, cityName) {
 			var i, tabcontent, tablinks;
