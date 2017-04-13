@@ -167,7 +167,11 @@
 
 
 	<script>
-		$('.rotatible').each(function(){
+		$('.rotatible').each(function () {
+			$($(this).children('img')[1]).hide();
+		});
+
+		$('.rotatible').click(function(){
 			rotateThisImage($(this));
 		});
 
@@ -179,7 +183,7 @@
 
 			var border_width_image = image1.css('border-width');
 
-			image2.hide();
+			// image2.hide();
 
 			image1.animate({
 				'width' : '0px',
@@ -197,6 +201,9 @@
 					'width' : max_height_1,
 					'border-width' : border_width_image,
 
+				}, function () {
+					image2.after(image1.clone());
+					image1.remove();
 				});
 			});
 		}
