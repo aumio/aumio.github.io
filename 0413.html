@@ -170,44 +170,31 @@
 		$('.rotatible').each(function(){
 			var image1 = $($(this).children('img')[0]);
 			var image2 = $($(this).children('img')[1]);
-		// var image3 = $($('.rotatible').children('img')[2]);
-		// var image4 = $($('.rotatible').children('img')[3]);
-		// var image5 = $($('.rotatible').children('img')[4]);
-		// var image6 = $($('.rotatible').children('img')[5]);
 
-		var max_height_1 = image1.css('height');
-		// var max_height_3 = image3.css('height');
-		// var max_height_5 = image5.css('height');
+			var max_height_1 = image1.css('height');
+			var border_width_image = image1.css('border-width');
 
+			image2.hide();
 
-		var border_width_image = image1.css('border-width');
-		// var border_width_image1 = image3.css('border-width');
-		// var border_width_image2 = image5.css('border-width');
+			image1.animate({
+				'width' : '0px',
+				'border-width' : '0px',
+				'height' : max_height_1
+			}, function () {
+				image1.hide();
+				// image2.show();
+				image2.width(0);
+				image2.css('height', max_height_1);
 
-		image2.hide();
+				image2.css('border-width', 0);
 
-		image1.animate({
-			'width' : '0px',
-			'border-width' : '0px',
-			'height' : max_height_1
-		}, function () {
-			image1.hide();
-			// image2.show();
-			image2.width(0);
-			image2.css('height', max_height_1);
+				image2.animate({
+					'width' : max_height_1,
+					'border-width' : border_width_image,
 
-			image2.css('border-width', 0);
-
-			image2.animate({
-				'width' : max_height_1,
-				'border-width' : border_width_image,
-
+				});
 			});
 		});
-
-
-
-	});
 
 		function openCity(evt, cityName) {
 			var i, tabcontent, tablinks;
@@ -223,69 +210,8 @@
 			evt.currentTarget.className += " active";
 		}
 
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-
-
-
-
-
-
-
-		// image4.hide();
-
-		// image3.animate({
-		// 	'width' : '0px',
-		// 	'border-width' : '0px',
-		// 	'height' : max_height_3
-		// }, function () {
-		// 	image3.hide();
-		// 	// image2.show();
-		// 	image4.width(0);
-		// 	image4.css('height', max_height_3);
-
-		// 	image4.css('border-width', 0);
-
-		// 	image4.animate({
-		// 		'width' : max_height_3,
-		// 		'border-width' : border_width_image1,
-
-		// 	});
-		// });
-
-		// image6.hide();
-
-		// image5.animate({
-		// 	'width' : '0px',
-		// 	'border-width' : '0px',
-		// 	'height' : max_height_5
-		// }, function () {
-		// 	image5.hide();
-		// 	// image2.show();
-		// 	image6.width(0);
-		// 	image6.css('height', max_height_5);
-
-		// 	image6.css('border-width', 0);
-
-		// 	image6.animate({
-		// 		'width' : max_height_5,
-		// 		'border-width' : border_width_image2,
-
-		// 	});
-		// });
-
-
-
-
-
-
-
-
-
-
-
-
-
+		// Get the element with id="defaultOpen" and click on it
+		document.getElementById("defaultOpen").click();
 	</script>
 
 
